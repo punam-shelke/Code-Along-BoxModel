@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Model</title>
+    <style>
+        /*make a different file for styling in real-world projects*/
+       /*resetting css*/
+       *{
+           margin: 0;
+           padding: 0;
+           font-size: 40px;
+           /*recommended to use box-sizing: border-box*/
+       }
+       /*Styling first box with background, padding, margin, border */
+       #box1{
+           background-color: #ff0000;
+           padding: 10px;/*between border and content*/
+           border: 10px solid #000000;/*between margin and padding*/
+           margin: 40px;
+           width: 200px;
+           height: 200px;
+           box-sizing: border-box;/*includes padding and border in width and height*/
+       }
+       #box2{
+           background-color: #0000ff;
+           padding: 10px;
+           border: 5px solid rgb(199, 199, 8);/*never use color name*/
+           margin :20px;
+           width: 200px;
+           height: 200px;
+           /*this box will be bigger than width and height specified*/
+       }
+    </style>
+</head>
+
+<body>
+    <div id="box1">ProGrad</div>
+    <div id="box1">Faceprep</div>
+</body>
+</html>
